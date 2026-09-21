@@ -1,0 +1,10 @@
+apiVersion: v2
+name: kargo-demo-podinfo
+description: Umbrella chart wrapping the public podinfo chart. Kargo bumps
+  the "podinfo" dependency's version below on every promotion.
+type: application
+version: 0.1.0
+dependencies:
+- name: podinfo
+  version: "6.7.0"
+  repository: oci://ghcr.io/stefanprodan/charts

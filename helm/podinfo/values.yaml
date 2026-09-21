@@ -1,0 +1,8 @@
+# Values for the "podinfo" dependency (see charts/podinfo/values.yaml for
+# the full list) are nested under its alias, per Helm subchart conventions.
+podinfo:
+  replicaCount: 1
+  ui:
+    message: "Hello from the Kargo Helm demo!"
+  service:
+    type: ClusterIP
